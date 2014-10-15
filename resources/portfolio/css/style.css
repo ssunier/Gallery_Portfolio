@@ -1,0 +1,130 @@
+html body{
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+.header h1{
+    margin-left:20px;
+    font-family: 'Nixie One', cursive;
+    text-transform:uppercase;
+    font-size:26px;
+}
+.header_bar{
+    height:40px;
+    width:100%;
+}
+
+/*.main-nav{
+  width:100px;
+  margin: 20px 0px 0px 0pd;
+  position: relative;
+}
+.main-nav li{
+  width: 100px;
+}
+.main-nav li a {
+  display: block;
+  float:left;
+  width: 180px;
+  padding: 0px 10px;
+  text-align: right;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  height: 50px;
+  border-right: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.main-nav li:nth-child(1):hover a{
+  background-color: rgba(174,54,55,0.9);
+}
+.main-nav li:nth-child(2):hover a{
+  background-color: rgba(195, 210, 67, 0.9)
+}
+.main-nav li:nth-child(3):hover a{
+  background-color: rgba(211, 132, 57, 0.9);
+}
+.main-nav li a span{
+  display: block;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 28px;
+  font-family: 'Alegreya SC', Georgia, serif;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+  -ms-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+}
+.main-nav li:hover span{
+  color: #fff;
+}
+.main-nav li img{
+  width:200px;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  -webkit-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+  -moz-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+  -o-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+  -ms-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+  transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
+}*/
+.main-nav li:hover img{
+  left: 300px;
+  opacity: 1;
+
+.Collage{
+
+    /*This is where you set the padding you want between the images*/
+    padding:10px;
+
+}
+.main {
+  position:relative;
+}
+.Collage {
+  padding:10px;
+}
+.Collage img{
+    margin:0;
+    padding:0;
+    display:inline-block;
+    vertical-align:bottom;
+    opacity:1;
+
+    /*This is where you set the border you want for the image*/
+    border:6px solid #FFF;
+}
+
+
+/* In this example, this is the main item being resized */
+.Image_Wrapper{
+    /* to get the fade in effect, set opacity to 0 on the first element within the gallery area */
+    opacity:0;
+    -moz-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.Caption{
+    font-size:14px;
+    font-weight:normal;
+    font-family:arial;
+}
+.Caption_Content{
+    /* padding:10px; */
+    color:#FFF;
+    padding:20px;
+}
