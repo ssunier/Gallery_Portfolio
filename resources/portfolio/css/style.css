@@ -4,12 +4,231 @@ html body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a {
+  color:grey;
   text-decoration: none;
 }
 li {
   list-style: none;
 }
-
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}@media (min-width: 992px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .col-md-pull-12 {
+    right: 100%;
+  }
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+  .col-md-pull-9 {
+    right: 75%;
+  }
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+  .col-md-pull-6 {
+    right: 50%;
+  }
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+  .col-md-pull-3 {
+    right: 25%;
+  }
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+  .col-md-pull-0 {
+    right: auto;
+  }
+  .col-md-push-12 {
+    left: 100%;
+  }
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+  .col-md-push-9 {
+    left: 75%;
+  }
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+  .col-md-push-6 {
+    left: 50%;
+  }
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+  .col-md-push-3 {
+    left: 25%;
+  }
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+  .col-md-push-0 {
+    left: auto;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+  .col-md-offset-0 {
+    margin-left: 0;
+  }
+}
+/*.grid{
+  margin-right:-15px;
+  margin-left:-15px
+}
+.row {
+  margin-left: -20px;
+  *zoom:1;
+}
+.row:before,
+.row:after{
+  display: table;
+  line-height:0;
+  content: "";
+}
+.row:after {
+  clear: both;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+  position:relative;
+  min-height:1px;
+  padding-right:15px;
+  padding-left:15px;
+  float:left;
+}
+.col-1{width:8.33333333%;}
+.col-2{width:16.6666667%}
+.col-3{width:25%;}
+.col-4{width:33.3333333%;}
+.col-5{width:41.66666667%;}
+.col-6{width:50%;}
+.col-7{width:58.33333333%;}
+.col-8{width:66.66666667%;}
+.col-9{width:75%;}
+.col-10{width:83.33333333%;}
+.col-11{width:91.66666667%;}
+.col-12{width:100%;}*/
+/* HEADER */
 .header h1{
     margin-left:20px;
     font-family: 'Nixie One', cursive;
@@ -21,7 +240,7 @@ li {
     width:100%;
 }
 
-/*.main-nav{
+.main-nav{
   width:100px;
   margin: 20px 0px 0px 0pd;
   position: relative;
@@ -43,13 +262,13 @@ li {
   background-color: rgba(255, 255, 255, 0.8);
 }
 .main-nav li:nth-child(1):hover a{
-  background-color: rgba(174,54,55,0.9);
+  background-color: rgba(121,231,237,0.9);
 }
 .main-nav li:nth-child(2):hover a{
-  background-color: rgba(195, 210, 67, 0.9)
+  background-color: rgba(181, 121, 237, 0.9)
 }
 .main-nav li:nth-child(3):hover a{
-  background-color: rgba(211, 132, 57, 0.9);
+  background-color: rgba(132, 12, 245, 0.9);
 }
 .main-nav li a span{
   display: block;
@@ -78,16 +297,10 @@ li {
   -o-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
   -ms-transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
   transition: left 0.4s ease-in-out, opacity 0.6s ease-in-out;
-}*/
+}
 .main-nav li:hover img{
   left: 300px;
   opacity: 1;
-
-.Collage{
-
-    /*This is where you set the padding you want between the images*/
-    padding:10px;
-
 }
 .main {
   position:relative;

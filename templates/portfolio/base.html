@@ -13,36 +13,43 @@
 -->
 <html lang="en">
   <head>
-    {% block meta_tags %}{% endblock %}
+    {% block meta_tags %}
+      <meta charset='utf-8'>
+      <meta http-equiv="X-UA-Compatible" content="ID=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% endblock %}
     <title>
-      {% block title %}{% endblock %}
-      <!--Leila Sunier | Art & Music Portfolio-->
+      {% block title %}
+        Leila Sunier | Art & Music Portfolio
+      {% endblock %}
     </title>
     {% block stylesheets %}
-      <link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}"/>
+      <link rel="stylesheet" type="text/css" href="{% static 'portfolio/css/style.css' %}"/>
       <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
     {% endblock %}
     {% block javascript %}
       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js" type="text/javascript"></script>
+      <script src="{% static 'portfolio/js/bootstrap.min.js' %}"></script>
     {% endblock %}
     {% block extra_head %}{% endblock %}
   </head>
   <body>
-    <div class="header"><h1>Leila Sunier</h1>
-      <img src='http://i60.tinypic.com/246uq34.jpg' class='header_bar'>
+    <div class='container'>
+      <div class="header"><h1>Leila Sunier</h1>
+        <img src='http://i60.tinypic.com/246uq34.jpg' class='header_bar'>
+      </div>
     </div>
-    <div class='grid'>
-      <div class='row'>
-        <div class='col-2'>
-          <div class="nav">
-            <!---->
-            <!--include a template for navigation.html-->
-          </div>
+    <div class='container'>
+      <div class='navbar col-md-3'>
+        <div class='nav'>
+          {% include 'portfolio/nav.html' %}
         </div>
-        <div class='col-10'>
-          <div id='main' role='main'>
-            {% block content %}{% endblock %}
-          </div>
+        <div class='navbar-collapse collapse'>
+        </div> <!--/.nav-collapse-->
+      </div> <!--/.nav-->
+      <div class='col-md-9'>
+        <div id='main' role='main'>
+          {% block content %}{% endblock %}
         </div>
       </div>
     </div>
