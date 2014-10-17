@@ -2,7 +2,13 @@
 {% load staticfiles %}
 
 {% block title%}{{"Leila Sunier | Music"}} {% endblock %}
-<!--[if lt IE 9]>
+{% block stylesheets %}
+  {{ block.super }}
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+{% endblock %}
+{% block javascript %}
+  {{ block.super }}
+  <!--[if lt IE 9]>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <![endif]-->
     <!--[if (gte IE 9) | (!IE)]><!-->
@@ -12,15 +18,15 @@
     <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-{% block javascript %}
 {% endblock %}
 
 {% block content %}
-  {% if latest_music_list %}
-    {% for song in latest_music_list %}
-      music.title
-    {% endfor %}
-  {% else %}
-    <p>No music has been posted</p>
-  {% endif %}
+  <div class='col-md-2'>
+    <button class='media_nav' id='video'>Videos</button>
+  </div>
+  <div class='col-md-2'>
+    <a class='media_nav' id='recording'>Recordings</a>
+  </div>
+
+
 {% endblock %}

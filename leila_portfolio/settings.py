@@ -62,10 +62,10 @@ WSGI_APPLICATION = 'leila_portfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sheridd8_leila',
-        'USER': 'sheridd8_admin',
-        'PASSWORD': 'Protego!114',
-        'HOST': '69.195.124.167',
+        'NAME': 'DB_NAME',
+        'USER': 'USERNAME',
+        'PASSWORD': 'PASSWORD',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }

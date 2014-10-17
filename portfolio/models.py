@@ -50,3 +50,17 @@ class Music(models.Model):
 
   def __str__(self):
     return self.title + ', ' + self.post_type
+
+class Video(models.Model):
+  music_id = models.AutoField(primary_key=True)
+  title = models.CharField(max_length=200)
+  link = models.URLField(max_length=255)
+  post_desc = models.CharField(max_length=500, null=True, blank=True)
+  post_date = models.DateTimeField(default=timezone.now)
+
+class Recording(models.Model):
+  music_id = models.AutoField(primary_key=True)
+  title = models.CharField(max_length=200)
+  link = models.CharField(max_length=500)
+  post_desc = models.CharField(max_length=500, null=True, blank=True)
+  post_date = models.DateTimeField(default=timezone.now)

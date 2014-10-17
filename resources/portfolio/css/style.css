@@ -303,3 +303,15 @@ li {
     color:#FFF;
     padding:20px;
 }
+
+.media_nav {
+  cursor:pointer;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
+  padding: 10px;
+  color: rgba(102, 102, 102, 0.6);
+}
+.media_nav:hover{
+  color: rgba(102, 102, 102, 1);
+}
+
